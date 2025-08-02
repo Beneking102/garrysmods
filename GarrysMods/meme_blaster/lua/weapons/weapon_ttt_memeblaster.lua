@@ -1,6 +1,5 @@
 if SERVER then
     AddCSLuaFile()
-    -- Distribute sound files
     resource.AddFile("sound/weapons/memeblaster/dealwithit.mp3")
     resource.AddFile("sound/weapons/memeblaster/rickroll.mp3")
     resource.AddFile("sound/weapons/memeblaster/meow.mp3")
@@ -43,7 +42,6 @@ SWEP.Primary.Ammo = "none"
 SWEP.Secondary.Automatic = false
 SWEP.Secondary.Ammo = "none"
 
--- Primary attack: random meme effect
 function SWEP:PrimaryAttack()
     if CLIENT then return end
     if self:GetNextPrimaryFire() > CurTime() then return end
@@ -53,7 +51,6 @@ function SWEP:PrimaryAttack()
     self:SendWeaponAnim(ACT_VM_PRIMARYATTACK)
     self:SetNextPrimaryFire(CurTime() + 1)
 
-    -- Trace target
     local tr = util.TraceLine({
         start = owner:GetShootPos(),
         endpos = owner:GetShootPos() + owner:GetAimVector() * 500,
@@ -123,7 +120,6 @@ function SWEP:PrimaryAttack()
     end
 end
 
--- Client-side Net Effects
 if CLIENT then
     local dwitMat = Material("vgui/ttt/icon_memeblaster.png")
 
@@ -152,10 +148,10 @@ if CLIENT then
     end)
 end
 
--- Net message definitions
 if SERVER then
     util.AddNetworkString("Meme_DWIT")
     util.AddNetworkString("Meme_RickRoll")
     util.AddNetworkString("Meme_Pixelate")
     util.AddNetworkString("Meme_Nyan")
+
 end
