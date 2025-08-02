@@ -4,9 +4,9 @@ Ein Bündel von drei unterhaltsamen Trouble-in-Terrorist-Town Mods für Garry’
 
 ## 1. One-Hit Crowbar
 
-Typ: Traitor-Equipment
-Effekt: Tötet Spieler/NPCs mit einem Schlag, spielt einen zufälligen Sound und zeigt Blutspritzer + Mini-Explosion.
-Features:
+### Typ: Traitor-Equipment
+### Effekt: Tötet Spieler/NPCs mit einem Schlag, spielt einen zufälligen Sound und zeigt Blutspritzer + Mini-Explosion.
+### Features:
 - 5 % Explosions-Risiko in der Hand
 - Sekundärangriff: starker Rückstoß („Fart Dash“)
 - 20 % Chance beim Dash: Opfer fliegt hoch und stirbt mit Sound
@@ -15,17 +15,17 @@ Features:
 
 ## 2. DNA Rebooter
 
-Typ: Detective-Equipment (Einweg)
-Effekt: Scannt frische Spieler-Leichen (< 10 s), liest DNA aus und fügt dem Täter 30 Schaden zu.
-Features:
+### Typ: Detective-Equipment (Einweg)
+### Effekt: Scannt frische Spieler-Leichen (< 10 s), liest DNA aus und fügt dem Täter 30 Schaden zu.
+### Features:
 - Nur einmal verwendbar, entfernt sich nach Einsatz
 - Feedback via Sound & Chat-Nachrichten
 
 ## 3. Meme-Blaster
 
-Typ: Traitor/Detective-Equipment
-Effekt: Schießt auf Ziel und löst einen von acht zufälligen Meme-Effekten aus.
-Features:
+### Typ: Traitor/Detective-Equipment
+### Effekt: Schießt auf Ziel und löst einen von acht zufälligen Meme-Effekten aus.
+### Features:
 - Sonnenbrille („Deal With It“) Overlay
 - Rickroll-Chat-Message
 - NPC-Horde (5x Bürger)
@@ -36,20 +36,22 @@ Features:
 - Bruh-Sound („Nothing happens“)
 
 ### Installation
+
 Lege dieses Repo in garrysmod/addons/ ab.
-Achte auf die jeweilige Ordnerstruktur:
+
+### Achte auf die jeweilige Ordnerstruktur:
 onehit_crowbar/
 dna_rebooter/
 meme_blaster/
 
-Inhalte:
+### Inhalte:
 /lua/weapons/*.lua
 /sound/weapons/...
 /materials/vgui/ttt/... (Icons)
 
-Starte Garry’s Mod und lade eine TTT-Runde im Einzelspieler.
+### Starte Garry’s Mod und lade eine TTT-Runde im Einzelspieler.
 
-Setze die nötigen ConVars:
+### Setze die nötigen ConVars:
 sv_cheats 1
 ttt_minimum_players 1
 ttt_force_traitor 1  (oder ttt_force_detective 1)
