@@ -45,27 +45,32 @@ dna_rebooter/
 meme_blaster/
 
 ### Inhalte:
+```
 /lua/weapons/*.lua
 /sound/weapons/...
 /materials/vgui/ttt/... (Icons)
+```
 
 ### Starte Garry’s Mod und lade eine TTT-Runde im Einzelspieler.
 
 ### Setze die nötigen ConVars:
+```
 sv_cheats 1
 ttt_minimum_players 1
 ttt_force_traitor 1  (oder ttt_force_detective 1)
 ttt_startforce 1
+```
 
-Gib dir die Waffe per Konsole:
-
+### Gib dir die Waffe per Konsole:
+```
 give weapon_ttt_onehitcrowbar
 give weapon_ttt_dna_rebooter
 give weapon_ttt_memeblaster
+```
 
-Nutzung
-One-Hit Crowbar: Linksklick = Tötung; Rechtsklick = Dash | Fart.
-DNA Rebooter: Linksklick auf frische Leiche (< 10 s).
-Meme-Blaster: Linksklick = zufälliger Meme-Effekt.
+## Nutzung
+- One-Hit Crowbar: Linksklick = Tötung; Rechtsklick = Dash | Fart.
+- DNA Rebooter: Linksklick auf frische Leiche (< 10 s).
+- Meme-Blaster: Linksklick = zufälliger Meme-Effekt.
 
 ## Viel Spaß beim Testen und Chaos-Schüren in TTT! 🎉
